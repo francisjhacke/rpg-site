@@ -104,3 +104,29 @@
     --chart-5: oklch(0.645 0.246 16.439);
   }
 }
+
+.dashboard-desert {
+  background: linear-gradient(135deg, #fdf6e3 60%, #f7e9c4 100%);
+  border: 2px solid #e2c275;
+  box-shadow: 0 8px 32px 0 rgba(194, 158, 80, 0.18), 0 1.5px 0 0 #e2c275;
+}
+
+.dark {
+  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
