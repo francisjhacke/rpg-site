@@ -14,6 +14,7 @@ import "./App.css";
 
 function App() {
   const stats = useStore((state) => state.stats);
+  const setStats = useStore((state) => state.setStats);
 
   return (
     <Router>
@@ -28,7 +29,7 @@ function App() {
                 <div className="flex flex-col justify-center items-center w-full max-w-xl p-8 mx-auto min-h-screen">
                   <div className="w-full flex flex-col items-center justify-center text-center min-h-[60vh]">
                     <SiteHeader subtitle="Answer a few questions to generate your RPG stats!" />
-                    <QuestionForm />
+                    <QuestionForm onComplete={setStats} />
                   </div>
                 </div>
               </div>
