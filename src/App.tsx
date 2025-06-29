@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,10 +9,11 @@ import Avatar from "./components/Avatar";
 import StatsDisplay from "./components/StatsDisplay";
 import DailyQuests from "./components/DailyQuests";
 import SiteHeader from "./components/SiteHeader";
+import useStore from "./hooks/useStore";
 import "./App.css";
 
 function App() {
-  const [stats, setStats] = useState<Record<string, any> | null>(null);
+  const stats = useStore((state) => state.stats);
 
   return (
     <Router>
@@ -28,7 +28,7 @@ function App() {
                 <div className="flex flex-col justify-center items-center w-full max-w-xl p-8 mx-auto min-h-screen">
                   <div className="w-full flex flex-col items-center justify-center text-center min-h-[60vh]">
                     <SiteHeader subtitle="Answer a few questions to generate your RPG stats!" />
-                    <QuestionForm onComplete={setStats} />
+                    <QuestionForm />
                   </div>
                 </div>
               </div>

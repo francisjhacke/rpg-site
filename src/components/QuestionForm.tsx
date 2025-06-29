@@ -4,14 +4,12 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import useStore from "../hooks/useStore";
 
-type QuestionFormProps = {
-  onComplete: (answers: Record<string, any>) => void;
-};
-
-const QuestionForm: React.FC<QuestionFormProps> = ({ onComplete }) => {
+const QuestionForm: React.FC = () => {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, any>>({});
+  const setStats = useStore((state) => state.setStats);
   const current = questions[step];
 
   const handleChange = (
@@ -24,7 +22,7 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onComplete }) => {
     if (step < questions.length - 1) {
       setStep(step + 1);
     } else {
-      onComplete(answers);
+      setStats(answers);
     }
   };
 
