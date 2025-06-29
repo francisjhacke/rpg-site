@@ -1,9 +1,3 @@
-## Prompt
+## Description
 
-I want to create a website called me RPG. The premise is that users will be asked questions 1 at a time to enter in rpg-like stats: weight/height/diet to represent health, common exercises/body to weight ratio to represent strength, education to represent intelligence, age to represent experience points, age/life events to represent wisdom, and others
-
-From there, I want to display an avatar unique to the combination of answers provided (could just be some randomly seeded algo).
-
-Finally, the app will provide actionable steps to improve the statistics calculated in each area of their life. On the users birthday, they will get a surge of experience which they can use to put points into the areas that they feel they have improved or enjoyed best in the last year.
-
-There should also be other avenues to earn experience each day. Small mini-games such as quizzes, or a check-list for the day for easily achievable goals to help them strive towards the areas they most want to improve. They can mark items off as they see fit and gain small amounts of experience points
+me.rpg is a unique blend of life tracking and RPG progression, where your daily habits and choices translate into character stats like Strength, Intelligence, Health, and Wisdom. By checking in regularly and completing simple tasks, you earn experience points that help you level up and develop the areas of your life that matter most. It’s less about being a hero and more about crafting your own evolving story—turning everyday actions into meaningful progress through a system that visualizes your growth as a personalized RPG character. Whether you’re focused on building better routines, gaining new skills, or reflecting on your journey, me.rpg makes self-improvement feel like a game you can actually play and win.
